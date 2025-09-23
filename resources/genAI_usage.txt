@@ -1,0 +1,15 @@
+GenAI used is Gemini 2.5
+
+1. Generated a Bootstrap HTML form for the calendar event modal based on the lab's instructions, including fields for 
+Event Name, Weekday, Time, Modality, Location, Remote URL, and Attendees. The initial prompt was refined to create a barebones form, omitting the JavaScript functionality that will be implemented in a later lab step.
+
+2. Provided Generative AI my current index and script files to help me debug
+what I was missing in my updateLocationOptions(). It helped me find that one of my variable names
+was not consistent, and through consulting gemini I switched from using style.background
+to updating display tag.
+
+3. Asked genAI why i couldnt close out of my save event modal,
+it taught me to add " data-bs-dismiss="modal" " to my button tags
+
+4. I asked Gemini to assist me in where to start for the extra credit. It's recomendation was to make a global variable I could use as a 'flag' in my 
+script file so that I may deliniate when I am updating an event versus making a new one
