@@ -32,6 +32,14 @@ function saveEvent() {
     const attendees = document.getElementById('event_attendees').value;
     const category = document.getElementById('event_category').value;
 
+    if (modality === 'remote') {
+        const urlPattern = /^https?:\/\/.+/;
+        if (!urlPattern.test(remote_url)) {
+            alert('Please enter a valid remote meeting URL (starting with http:// or https://)');
+            return;
+        }
+    }
+
     //array to hold specific event
     const eventDetails = [name, weekday, time, modality, location, remote_url, attendees, category];
 
